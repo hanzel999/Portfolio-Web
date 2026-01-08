@@ -450,3 +450,22 @@ span{
     color: #b74b4b;
     text-decoration: underline;
 }
+
+/* Styling awal untuk icon menu (sembunyi di desktop) */
+#menu-icon {
+    font-size: 3.6rem;
+    color: #b74b4b;
+    display: none; 
+    cursor: pointer;
+}
+
+@media (max-width: 995px) {
+    #menu-icon {
+        display: block; /* Munculkan di HP */
+    }
+    
+    /* Penyesuaian agar icon tidak tertutup */
+    header {
+        padding: 2rem 4%; 
+    }
+}
