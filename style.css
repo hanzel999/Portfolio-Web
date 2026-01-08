@@ -285,15 +285,16 @@ span{
 .skills-box ul li:last-child {
     border-bottom: none;
 }
-/* ===== Education Section ===== */
+
+/* ===== Education Table ===== */
 .education {
     background-color: black;
     padding-top: 10rem;
 }
 
-.education-container {
+.education-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     gap: 6rem;
     align-items: center;
 }
@@ -301,46 +302,40 @@ span{
 .education-img img {
     width: 100%;
     border-radius: 2rem;
-    box-shadow: 0 0 30px rgba(183, 75, 75, 0.6);
-    transition: 0.3s ease;
+    box-shadow: 0 0 35px rgba(183, 75, 75, 0.7);
 }
 
-.education-img img:hover {
-    transform: scale(1.03);
+/* Table Style */
+.education-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #161616;
+    border-radius: 2rem;
+    overflow: hidden;
 }
 
-.education-content h3 {
-    font-size: 3.2rem;
-    margin-bottom: 1rem;
+.education-table th,
+.education-table td {
+    padding: 2.2rem;
+    font-size: 2rem; /* FONT DIPERBESAR */
+    text-align: left;
+}
+
+.education-table th {
+    width: 35%;
     color: #b74b4b;
-}
-
-.edu-location {
-    font-size: 1.6rem;
-    display: block;
-    margin-bottom: 1.5rem;
-    color: #ccc;
-}
-
-.edu-degree {
-    font-size: 2.2rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    background-color: #1f1f1f;
 }
 
-.edu-gpa {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+.education-table td {
+    color: #ffffff;
 }
 
-.edu-period {
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
-    color: #ccc;
+.education-table tr {
+    border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
-.edu-desc {
-    font-size: 1.6rem;
-    line-height: 1.8;
-    color: #e0e0e0;
+.education-table tr:last-child {
+    border-bottom: none;
 }
