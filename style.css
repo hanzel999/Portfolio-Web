@@ -285,3 +285,62 @@ span{
 .skills-box ul li:last-child {
     border-bottom: none;
 }
+/* ===== Education Section ===== */
+.education {
+    background-color: black;
+    padding-top: 10rem;
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 6rem;
+    align-items: center;
+}
+
+.education-img img {
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 30px rgba(183, 75, 75, 0.6);
+    transition: 0.3s ease;
+}
+
+.education-img img:hover {
+    transform: scale(1.03);
+}
+
+.education-content h3 {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+    color: #b74b4b;
+}
+
+.edu-location {
+    font-size: 1.6rem;
+    display: block;
+    margin-bottom: 1.5rem;
+    color: #ccc;
+}
+
+.edu-degree {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.edu-gpa {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.edu-period {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+.edu-desc {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+}
