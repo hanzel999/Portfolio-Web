@@ -231,97 +231,57 @@ span{
         margin-top: 4rem;
     }
 }
-/* --- Tambahan Style untuk Halaman Skills --- */
-
+/* ===== Skills Section ===== */
 .skills {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     background-color: black;
-    padding-top: 100px; /* Memberi jarak dari header fixed */
+    padding-top: 10rem;
 }
 
-.heading {
-    font-size: 5rem;
-    margin-bottom: 3rem;
+.section-title {
     text-align: center;
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 6rem;
 }
 
 .skills-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 4rem;
-    width: 100%;
 }
 
 .skills-box {
-    flex: 1 1 40rem; /* Responsif: akan turun ke bawah jika layar kecil */
-    background: #161616; /* Sedikit lebih terang dari hitam pekat */
-    padding: 3rem 2rem;
+    background-color: #161616;
+    padding: 3.5rem;
     border-radius: 2rem;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    border: 1px solid rgba(183, 75, 75, 0.2); /* Border merah tipis */
-    transition: 0.5s ease;
+    border: 1px solid #b74b4b;
+    transition: 0.3s ease;
 }
 
 .skills-box:hover {
-    border-color: #b74b4b;
-    box-shadow: 0 0 20px rgba(183, 75, 75, 0.2);
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(183, 75, 75, 0.6);
 }
 
 .skills-box h3 {
-    font-size: 2.5rem;
-    color: white;
-    text-align: center;
+    font-size: 2.6rem;
     margin-bottom: 2rem;
-    border-bottom: 2px solid #b74b4b;
-    display: inline-block;
-    padding-bottom: 0.5rem;
-    /* Trik agar garis bawah ada di tengah */
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.skills-content {
+    color: #b74b4b;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
+    align-items: center;
+    gap: 1rem;
 }
 
-/* Desain untuk setiap item skill (seperti tombol) */
-.skill-tag {
+.skills-box ul {
+    list-style: none;
+}
+
+.skills-box ul li {
     font-size: 1.6rem;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border: 2px solid #b74b4b;
-    border-radius: 3rem;
-    cursor: default;
-    transition: 0.3s ease;
-    background: transparent;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
-.skill-tag:hover {
-    background-color: #b74b4b;
-    color: black;
-    box-shadow: 0 0 15px #b74b4b;
-    transform: scale(1.05);
-    font-weight: 600;
-}
-
-/* Responsif untuk Tablet/HP */
-@media(max-width: 768px) {
-    .heading {
-        font-size: 4rem;
-    }
-    .skills-container {
-        padding: 0 2rem;
-    }
-    .skills-box {
-        width: 100%;
-    }
+.skills-box ul li:last-child {
+    border-bottom: none;
 }
