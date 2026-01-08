@@ -339,3 +339,114 @@ span{
 .education-table tr:last-child {
     border-bottom: none;
 }
+
+/* ===== Experience Section ===== */
+.experience {
+    background-color: black;
+    padding-top: 10rem;
+}
+
+.experience-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 6rem;
+    align-items: center;
+}
+
+.experience-img img {
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 35px rgba(183, 75, 75, 0.7);
+}
+
+/* Table Style */
+.experience-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #161616;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.experience-table th,
+.experience-table td {
+    padding: 2.2rem;
+    font-size: 2rem; /* FONT BESAR */
+    text-align: left;
+    vertical-align: top;
+}
+
+.experience-table th {
+    width: 30%;
+    color: #b74b4b;
+    font-weight: 600;
+    background-color: #1f1f1f;
+}
+
+.experience-table td {
+    color: #ffffff;
+}
+
+.experience-table tr {
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.experience-table tr:last-child {
+    border-bottom: none;
+}
+
+/* List di dalam tabel */
+.exp-list {
+    padding-left: 2rem;
+}
+
+.exp-list li {
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+}
+
+/* ===== Works / Portfolio Section ===== */
+.works {
+    background-color: black;
+    padding-top: 10rem;
+}
+
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 4rem;
+}
+
+.work-card {
+    background-color: #161616;
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.work-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(183, 75, 75, 0.6);
+}
+
+.work-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.work-title {
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.work-title:hover {
+    color: #b74b4b;
+    text-decoration: underline;
+}
