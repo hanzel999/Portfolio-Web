@@ -395,6 +395,12 @@ span{
     border-bottom: none;
 }
 
+.experience-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(183, 75, 75, 0.4);
+    transition: 0.4s ease;
+}
+
 /* List di dalam tabel */
 .exp-list {
     padding-left: 2rem;
@@ -409,6 +415,17 @@ span{
 .works {
     background-color: black;
     padding-top: 10rem;
+}
+
+.works-content {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.works-content p {
+    font-size: 1.6rem;
+    line-height: 1.6; /* Opsional: agar jarak antar baris lebih nyaman dibaca */
+    color: white;
 }
 
 .works-grid {
@@ -467,10 +484,4 @@ span{
     header {
         padding: 2rem 4%; 
     }
-}
-
-.experience-box:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 20px rgba(183, 75, 75, 0.4);
-    transition: 0.4s ease;
 }
