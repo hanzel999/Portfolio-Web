@@ -174,7 +174,7 @@ span{
     position: relative;
 }
 .typing-text span::before{
-    content: "software Developer";
+    content: "Graphic Design";
     color: #b74b4b;
     animation: words 20s infinite;
 }
@@ -198,7 +198,7 @@ span{
         content: "Web Developer";
     }
     21%, 40%{
-        content: "Digital Marketing";
+        content: "Graphic Design";
     }
     41%, 60%{
         content: "Web Designer";
