@@ -1,8 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Experience | Raihan Yafi</title>
+</head>
+<body>
+<header>
+    <a href="#" class="logo">Raihan Yafi</a>
+    <i class="fa-solid fa-bars" id="menu-icon"></i>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html" class="active">Experience</a>
+        <a href="works.html">Works</a>
+    </nav>
+</header>
 <section class="experience">
     <h2 class="section-title">My <span>Experience</span></h2>
-
     <div class="experience-wrapper">
-        
+        </div>
         <div class="experience-table">
             <table>
                 <tr>
@@ -19,7 +39,7 @@
                 </tr>
                 <tr>
                     <th>Period</th>
-                    <td>Aug 2025 – Dec 2025</td>
+                    <td>Aug 2025 – Jan 2026</td>
                 </tr>
                 <tr>
                     <th>Responsibilities</th>
@@ -34,37 +54,16 @@
                 </tr>
             </table>
         </div>
-
-        <div class="experience-table">
-            <table>
-                <tr>
-                    <th>Event</th>
-                    <td>AIPC (AI Paper Competition)</td>
-                </tr>
-                <tr>
-                    <th>Location</th>
-                    <td>Surabaya, Indonesia</td>
-                </tr>
-                <tr>
-                    <th>Position</th>
-                    <td>Divisi Hubungan Masyarakat</td>
-                </tr>
-                <tr>
-                    <th>Period</th>
-                    <td>Aug 2024 – Oct 2024</td>
-                </tr>
-                <tr>
-                    <th>Responsibilities</th>
-                    <td>
-                        <ul class="exp-list">
-                            <li>Mengelola proses registrasi untuk lebih dari 100 peserta dari berbagai universitas, memastikan akurasi data pendaftaran dan kelengkapan berkas administrasi.</li>
-                            <li>Bertindak sebagai penghubung utama (helpdesk) bagi calon peserta, memberikan informasi teknis terkait tema AI paper, serta menangani keluhan atau kendala pendaftaran dengan waktu respon yang cepat.</li>
-                            <li>Bekerja sama dengan tim IT dan divisi acara untuk sinkronisasi data peserta guna kebutuhan seleksi tahap awal dan penjurian.</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-        </div>
-
     </div>
+
 </section>
+<script>
+        const menuIcon = document.querySelector('#menu-icon');
+        const navbar = document.querySelector('nav');
+        menuIcon.onclick = () => {
+            menuIcon.classList.toggle('fa-x');
+            navbar.classList.toggle('active');
+        };
+    </script>
+</body>
+</html>
